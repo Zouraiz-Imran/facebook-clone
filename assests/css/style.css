@@ -12,6 +12,8 @@
     --icon-background:#e4e6eb;
     --light-black:#221d1d;
     --light-red:#e41e3f;
+    --green:#4fdb2c;
+    --yellow:#cacd0b;
 }
 
 *{
@@ -28,7 +30,7 @@
 
 html{
     font-size: 62.5%;
-    overflow: hidden;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
 }
@@ -269,7 +271,7 @@ cursor: pointer;
     font-weight: 600;
 }
 .consoller{
-    height: 600px;
+    height: 100vh;
     overflow-y: scroll;
     scrollbar-color: #663399 #008000 ;
     scrollbar-width: auto;
@@ -317,6 +319,9 @@ cursor: pointer;
     font-size: 14px;
     font-weight: 600;
 }
+.main .left-side .see-less , .main .left-side .see-more{
+    cursor: pointer;
+}
 
 .main .left-side .overflow-btn , .main .left-side .see-less{
     display: none;
@@ -332,10 +337,13 @@ cursor: pointer;
     padding: 0 30px;
     width: 60%;
 }
+.mid-section .stories-section{
+    border-radius: 15px;
+    background-color: var(--white);
+}
 .mid-section .nav-4{
     display: flex;
     justify-content: space-around;
-    background-color: var(--white);
     border-bottom: 1px solid lightgray;
 }
 .mid-section .nav-4 .top{
@@ -369,7 +377,6 @@ cursor: pointer;
 .mid-section .cards{
     display: flex;
     justify-content: space-between;
-    background-color: var(--white);
     padding: 15px;
 }
 .mid-section .cards .storie-1{
@@ -402,7 +409,7 @@ padding-left:36px ;
     height: 40px;
     background-color: #5568ef;
     padding: 10px;
-    outline: 4px solid var(--light-gray); 
+    outline: 4px solid var(--white); 
     position: absolute;
     top: -23px;
     left: 47px;
@@ -420,7 +427,7 @@ padding-left:36px ;
     padding-left: 21px;
     padding-right: 22px;
     height: 47px;
-    background-color:var(--light-gray);
+    border-bottom: 1px solid #b8b8bd;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
 
@@ -468,6 +475,210 @@ padding-left:36px ;
 .mid-section .story .img:hover img{
     transform: scale(1.1);
 }
+
+/* add post section start */
+#add-post{
+    margin-top: 15px;
+    background-color: var(--white);
+    padding: 0 15px;
+    border-radius: 15px;
+}
+
+#add-post .add-input{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    display: flex;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+#add-post .add-input .profile-icon img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+}
+
+#add-post .add-input input{
+    width: 100%;
+    margin-left: 15px;
+    background-color: rgb(240 242 245);
+    border-radius: 50px;
+    padding-left: 20px;
+}
+
+#add-post .add-input input::placeholder{
+    font-size: 20px;
+}
+
+#add-post .add-media{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+#add-post .add-media .add-icon{
+    display: flex;
+    align-items: center;
+    padding: 10px 60px;
+}
+
+#add-post .add-media .add-icon i{
+    font-size: 25px;
+}
+
+#add-post .add-media .add-icon h4{
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+
+#add-post .add-icon:hover{
+    background-color: var(--icon-background);
+    border-radius: 15px;
+}
+#add-post .video i{
+    color: var(--red);
+}
+
+#add-post .Photo i{
+    color: var(--green);
+}
+
+#add-post .feeling i{
+    color: var(--yellow);
+}
+
+/* post css start */
+#post{
+    background-color: white;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+#post .post-header{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+#post .post-header .left{
+    display: flex;
+    align-items: center;
+}
+#post .post-header .left .profile-icon img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+#post .post-header .left .post-info{
+    margin-left: 10px;
+    font-size: 12px;
+}
+#post .post-header .left .post-info a{
+    color: var(--black);
+}
+#post .post-header .right i{
+    color: black;
+    font-size: 12px;
+    background: lightgray;
+    padding: 14px;
+    border-radius: 50%;
+}
+#post .about-post{
+    padding: 0 15px;
+    font-size: 12px;
+    flex-wrap: wrap;
+}
+#post .post-body img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#post .post-footer{
+    margin: 0 15px;
+}
+#post .footer-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 0;
+    border-bottom: 1px solid lightslategrey;
+}
+#post .reaction{
+    display: flex;
+    align-items: center;
+}
+#post .reaction-icon{
+    font-size: 25px;
+}
+#post .heart i{
+    color: var(--light-red);
+}
+#post .like i{
+    color: var(--blue);
+}
+#post .sad i{
+    color: #fbd25f;
+}
+#post .like-count{
+    font-size: 12px;
+    margin-left: 10px;
+}
+#post .counter{
+    display: flex;
+    align-items: center;
+}
+#post .comment-count{
+    font-size: 12px;
+    margin-right: 15px;
+    color: var(--black);
+}
+#post .share-count{
+    font-size: 12px;
+    color: var(--black);
+
+}
+#post .footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+#post .responce a{
+    display: flex;
+    align-items: center;
+    padding: 12px  0;
+    padding-left: 62px;
+    color: var(--light-black);
+}
+#post .responce a i{
+    font-size: 25px;
+    margin-right: 5px;
+}
+#post .responce h4{
+    font-size: 14px;
+}
+
+#post .responce:hover{
+    background-color: lightgrey;
+    border-radius: 13px;
+}
+#post .responce {
+    width: 100%;
+}
+#post .post-overflow-btn , #post .post-see-less{
+    display: none;
+}   
+
+#post .post-overflow-btn.active , #post .post-see-less.active{
+    display: block;
+}
+#post .post-see-more  , #post .post-see-less{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
 
 
 

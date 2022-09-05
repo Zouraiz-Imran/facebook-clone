@@ -11,3 +11,17 @@ $(document).ready(function(){
       $('.see-less').removeClass('active');
   })
 })
+
+$(document).ready(function(){
+  $('.post-see-more').click(function(){
+      $(this).hide();
+      $('.post-overflow-btn').addClass('active');
+      $('.post-see-less').addClass('active');
+  })
+  
+  $('.post-see-less').click(function(){
+      $('.post-see-more').show();
+      $('.post-overflow-btn').removeClass('active');
+      $('.post-see-less').removeClass('active');
+  })
+})
