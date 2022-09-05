@@ -239,6 +239,7 @@ cursor: pointer;
 
 .main{
     padding: 15px;
+    display: flex;
 }
 .main .left-side{
     width: 20%;
@@ -324,6 +325,150 @@ cursor: pointer;
 .main .left-side .overflow-btn.active , .main .left-side .see-less.active{
     display: block;
 }
+
+
+/* main section start */
+.mid-section{
+    padding: 0 30px;
+    width: 60%;
+}
+.mid-section .nav-4{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--white);
+    border-bottom: 1px solid lightgray;
+}
+.mid-section .nav-4 .top{
+    padding: 20px 80px ;
+    font-size: 15px;
+}
+
+.mid-section .nav-4 .top:hover{
+    background-color: var(--light-gray);
+    border-radius: 20px;
+}
+
+.mid-section .nav-4 .top{
+    position: relative;
+}
+
+.mid-section .nav-4 .top:after{
+    content: "";
+    position:absolute;
+
+    background-color:var(--blue);
+    height: 3px;
+    left: 0;
+    bottom: 0px;
+    width: 0; 
+}
+
+.mid-section .top:active:after{
+    width: 100%;
+}
+.mid-section .cards{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+    padding: 15px;
+}
+.mid-section .cards .storie-1{
+    width: 130px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.mid-section .cards .create-storie .img{
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.mid-section .cards .create-storie .img img{
+    width: 130px;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.mid-section .cards .create-storie .icon-plus{
+padding-left:36px ;
+}
+
+.mid-section .cards .create-storie .icon-plus i{
+    border-radius: 30px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #5568ef;
+    padding: 10px;
+    outline: 4px solid var(--light-gray); 
+    position: absolute;
+    top: -23px;
+    left: 47px;
+    color: var(--white);
+}
+
+.mid-section .cards .create-storie .bottom{
+    position: relative;
+
+}
+.mid-section .cards .profile-name{
+    padding-top: 21px;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 21px;
+    padding-right: 22px;
+    height: 47px;
+    background-color:var(--light-gray);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+
+.mid-section .cards .storie-1 .img{
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.mid-section .cards .storie-1 .img img{
+    width: 130px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.mid-section .cards .storie-1{
+    position: relative;
+}
+.mid-section .cards .icon img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    top: 13px;
+    left: 13px;
+    outline: 3px solid cornflowerblue;
+}
+
+
+.mid-section .cards .storie-1 .ac-name{
+    position: absolute;
+    font-size: 14px;
+    font-weight: 700;
+    top: 174px;
+    left: 15px;
+    color: var(--white);
+
+}
+
+.mid-section .story .img img{
+    transition: transform 0.5s;
+}
+.mid-section .story .img:hover img{
+    transform: scale(1.1);
+}
+
 
 
 
