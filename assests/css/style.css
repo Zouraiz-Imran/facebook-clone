@@ -246,6 +246,7 @@ cursor: pointer;
 .main{
     padding: 15px;
     display: flex;
+    margin-top: 60px;
 }
 .main .left-side{
     width: 260px;
@@ -915,7 +916,7 @@ padding-left:36px ;
 
 
 /* media querry */
-@media (max-width:1259px) {
+@media (max-width:1300px) {
 .navbar .nav-1 .search-form input{
     display: none;
 }
@@ -927,6 +928,12 @@ padding-left:36px ;
     padding-right: 20px;
     padding-left: 0;
     width: 714px;
+}   
+ .mid-section .cards{
+    padding: 10px;
+}
+.mid-section .cards .storie-1{
+    width: 120px;
 }
 
 }
@@ -935,12 +942,7 @@ padding-left:36px ;
         width: 680px;
         padding-left: 0;
     }
-    .mid-section .cards{
-        padding: 10px;
-    }
-    .mid-section .cards .storie-1{
-        width: 120px;
-    }
+
 }
 @media(max-width:1200px){
     .mid-section{
@@ -950,8 +952,15 @@ padding-left:36px ;
     .mid-section .storie-3{
         display: none;
     }
-    
+    #add-post .add-media .add-icon {
+        padding: 5px 23px;
+    }
+    #post .responce a {
+        padding: 12px 40px;
+    }
 }
+    
+
   
 @media(max-width:1099px){
     
@@ -994,6 +1003,12 @@ padding-left:36px ;
     .mid-section .storie-3{
         display: none;
     }
+    #add-post .add-media .add-icon {
+        padding: 5px 23px;
+    }
+    #post .responce a {
+        padding: 12px 40px;
+    }
 }
 
 @media(max-width:960px){
@@ -1010,9 +1025,14 @@ padding-left:36px ;
     }
     .mid-section{
         margin: auto;
+        width:auto;
+        padding: 0 100px;
     }
     #add-post .add-media .add-icon {
         padding: 5px 28px;
+    }
+    .mid-section .storie-3{
+        display: block;
     }
 }
 
@@ -1055,6 +1075,7 @@ padding-left:36px ;
 @media(max-width:600px){
     .mid-section{
         width: 500px;
+        padding: 0;
 
     }
     .mid-section .nav-4 .top{
@@ -1087,5 +1108,8 @@ padding-left:36px ;
     }
     #post .responce a{
         padding: 12px 38px;
+    }
+    .mid-section .storie-3{
+        display: none;
     }
 }
